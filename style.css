@@ -51,7 +51,7 @@ body{
 }
 
 .navbar a:hover{
-    color: rgb(7, 12, 52);
+    color: rgb(5, 231, 220);
 }
 .home{
     height: 100vh;
@@ -70,6 +70,7 @@ body{
     position: relative;
     font-size: 8vh;
     font-weight: 700;
+    color: white;
 }
 .home-content h1::before{
     content: "";
@@ -86,7 +87,7 @@ body{
     position: relative;
     font-size: 5vh;
     font-weight: 700;
-    color: white;
+    color: rgb(5, 231, 220);
 }
 .home-content h3 span{ 
     color: rgb(5, 231, 220);
@@ -186,7 +187,36 @@ body{
     animation-delay: 2.2s;
     z-index: 100;
 }
+.about{
+    height: 100vh;
+    background: url("fondoportafoilio.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
 
+}
+.home-content h1{
+    position: relative;
+    font-size: 10vh;
+    font-weight: 700;
+    color: white;
+}
+.about-content{
+    max-width: 50%;
+
+}
+.about-content h3{
+    position: relative;
+    font-size: 8vh;
+    font-weight: 700;
+    color: rgb(5, 231, 220);
+}
+.about-content p {
+    position: relative;
+    font-size: 5vh;
+    margin: 20px 0 40px;
+}
 
 @keyframes showRight {
     100%{
@@ -194,3 +224,29 @@ body{
     }
     
 }
+
+.experience-content {
+    max-width: 600px;
+    margin: 0;
+    padding: 20px;
+}
+
+canvas {
+    width: 100%;
+    height: 400px;
+}
+
+.project-image-container {
+    padding: 20px; /* Agrega un relleno alrededor de la imagen */
+}
+.project-image {
+    width: 500px; /* Ancho de la imagen */
+    height: 250px; /* Altura de la imagen */
+    background-size: cover; /* Ajustar la imagen al tamaño del contenedor */
+    transition: transform 0.5s ease-in-out; /* Transición suave para la animación */
+}
+
+.project-image.animate {
+    transform: scale(1.1); /* Escalar la imagen durante la animación */
+}
+

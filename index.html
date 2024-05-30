@@ -10,28 +10,61 @@
     <header class="header">
         <a href="#" class="logo">AMF.</a>
         <nav class="navbar">
-            <a href="#">Inicio</a>
-            <a href="#">Sobre Mi</a>
-            <a href="#">Experiencia</a>
-            <a href="#">Portafolio</a>
-            <a href="#">Contacto</a>
+            <a href="#inicio">Inicio</a>
+            <a href="#sobremi">Sobre Mi</a>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#portafolio">Portafolio</a>
+            <a href="#contacto">Contacto</a>
         </nav>
     </header>
-    <section class="home">
+    <section id="inicio" class="home">
         <div class="home-content">
             <h3>Hola, me llamo </h3>
             <h1>Alexis Mesias</h1>            
             <h3><span class="multiple-text"></span></h3>
-            <p class="text"></p>
+            <p>Ingeniero en Ciencias de la Computacion y Tecnologias de la Informacion, egresado de la distinguida Universidad del Valle de Guatemala.</p>
             <div class="btn-box">
-                <a href="#">Contáctame</a>
+                <a href="#contacto">Contáctame</a>
             </div>
+        </div>
+    </section>
+    <section id="sobremi" class="about">
+        <div class="about-content">
+            <h3 class="about-title"></h2>
+            <p class="about-text"></p>
+            
+        </div>
+    </section>
+    <section id="experiencia" class="about">
+        <div class="experience-content">
+            <h3>Experiencia</h3>
+            <canvas id="experienceChart"></canvas>
+        </div>
+    </section>
+    <section id="portafolio" class="about">
+        <div class="about-content">
+            <h3 id="project-title"></h3>
+            <div class="project-image-container">
+                <div class="project-image" id="project-image"></div>
+            </div>
+        </div>
+    </section>
+    <section id="contacto" class="about">
+        <div class="about-content">
+            <h3>Contacto</h3>
+            <p>Puedes ponerte en contacto conmigo a través de los siguientes medios:</p>
+            <ul>
+                <li>Email: alexistodj@gmail.com</li>
+                <li>Teléfono: +502 5043 8645</li>
+                <li>Dirección: 10a AV 31-06 Zona 8 Ciudad Guatemala</li>
+            </ul>
         </div>
     </section>
     
     
     <span class="home-imgHover"></span>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
