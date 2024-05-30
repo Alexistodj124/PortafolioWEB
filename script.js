@@ -118,9 +118,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  var projectTitles = ['Auto Partes Los Luises CRM', 'Car OBDII BLOG'];
+  var projectTitles = ['Auto Partes Los Luises CRM', 'OBDII Car BLOG'];
   var projectImages = [
-    ['./apll1.png', './apll1.png', './apll3.png'], 
+    ['./apll1.png', './apll2.png', './apll3.png'], 
     ['./blog1.png', './blog2.png', './blog3.png']  
   ];
 
@@ -134,6 +134,12 @@ document.addEventListener('DOMContentLoaded', function () {
       imageIndex++;
       if (imageIndex >= projectImages[index].length) {
           imageIndex = 0;
+          // Increment the index to switch to the next project
+          index++;
+          // If we reached the end of projects, reset the index to loop back to the first project
+          if (index >= projectTitles.length) {
+              index = 0;
+          }
       }
   }
   nextProject();
